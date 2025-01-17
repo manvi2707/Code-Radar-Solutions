@@ -2,7 +2,7 @@
 
 int main(){
     float num1,nums;
-    scanf("%f %f" , num1,num2);
+    scanf("%f %f" ,&num1,&num2);
     if (num1 > num2){
         printf("True");
     }
