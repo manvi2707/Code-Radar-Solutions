@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    float num1 , num2;
-    scanf("%f %f", &num1 , &num2);
-    printf("%f" , num1 | num2);
+    int num1 , num2;
+    scanf("%i %i", &num1 , &num2);
+    printf("%i" , num1 | num2);
     return 0;
 }
