@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int num1 , num2 , num3;
+    int num1 , num2 , num3 , av;
     scanf("%i %i %i" , &num1 , &num2 , &num3);
-    printf("Average: %.2f" , (num1+num2+num3)/3 );
+    av = ((num1+num2+num3)/3);
+    printf("Average: %.2f" , av);
     return 0;
 }
