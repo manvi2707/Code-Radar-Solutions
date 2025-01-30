@@ -13,6 +13,6 @@ char* welcome() {
 }
 
 int main() {
-    welcome()
+    welcome();
     return 0;
 }
