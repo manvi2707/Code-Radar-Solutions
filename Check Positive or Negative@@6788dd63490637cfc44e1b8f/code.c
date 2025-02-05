@@ -6,7 +6,7 @@ char* welcome() {
     if (num > 0){
         printf("Positiive");
     }
-    if else(num < 0){
+    else if(num < 0){
         printf("Negative");
     }
     else{
