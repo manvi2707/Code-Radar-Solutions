@@ -12,14 +12,14 @@ char* welcome() {
             for (i = 0 ; i < size ; i++ ){
                 if (list[i] == character){
                     found =  1;
-                    if (found){
-                    printf("Vowel");
-                    }
-                    else{
-                        printf("Consonant");
-                    }
                     break;
                 }
+            if (found){
+                printf("Vowel");
+            }
+            else{
+                printf("Consonant");
+            }
             } 
         }
         else{
