@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 char* welcome() {
-    int length , bredth, height;
+    int length , breadth, height;
     scanf("%d %d %d" , &length , &breadth , &height);
     if (length + breadth > height){
         if (length + height > breadth){
