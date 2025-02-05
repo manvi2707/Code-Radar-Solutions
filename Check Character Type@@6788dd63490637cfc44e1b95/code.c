@@ -10,16 +10,15 @@ char* welcome() {
     if (isalnum(character)){
         if (isalpha(character)){
             for (i = 0 ; i < size ; i++ ){
-                printf("%c" , list[i]);
                 if (list[i] == character){
                     found =  1;
-                    break;
-                }
-                if (found){
+                    if (found){
                     printf("Vowel");
-                }
-                else{
-                    printf("Consonant");
+                    }
+                    else{
+                        printf("Consonant");
+                    }
+                    break;
                 }
             } 
         }
