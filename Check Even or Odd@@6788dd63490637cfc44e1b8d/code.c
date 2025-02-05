@@ -12,6 +12,6 @@ char* welcome() {
 }
 
 int main() {
-    printf("%s", welcome());
+    welcome();
     return 0;
 }
