@@ -14,13 +14,13 @@ char* welcome() {
                     found =  1;
                     break;
                 }
+            }
             if (found){
                 printf("Vowel");
             }
             else{
                 printf("Consonant");
             }
-            } 
         }
         else{
             printf("Digit");
