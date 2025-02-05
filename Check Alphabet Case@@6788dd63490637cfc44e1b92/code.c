@@ -4,11 +4,16 @@
 char* welcome() {
     char character;
     scanf("%c" , &character);
-    if (isupper(character)){
-        printf("Uppercase");
+    if (isalpha(character)){
+        if (isupper(character)){
+            printf("Uppercase");
+        }
+        else{
+            printf("Lowercase");
+        }
     }
     else{
-        printf("Lowercase");
+        printf("Not an alphabet");
     }
 }
 
