@@ -3,7 +3,7 @@
 char* welcome() {
     char character;
     scanf("%c" , &character);
-    if (character.isupper()){
+    if (isupper(character)){
         printf("Uppercase");
     }
     else{
