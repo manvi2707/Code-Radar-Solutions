@@ -3,7 +3,7 @@
 
 char* welcome() {
     char character;
-    int i = 0 , found;
+    int i = 0 , found = 0;
     int list[10] = {'a' , 'e' , 'i' , 'o' , 'u' , 'A' , 'E' , 'I' , 'O' , 'U'};
     int size = sizeof(list) / sizeof(list[0]);
     scanf("%c" , &character);
