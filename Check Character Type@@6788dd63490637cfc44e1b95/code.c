@@ -11,8 +11,8 @@ char* welcome() {
         if (isalpha(character)){
             for (i = 0 ; i < size , i++ ){
                 if (list[i] == character){
-                    found =  1
-                    break
+                    found =  1;
+                    break;
                 }
                 if (found){
                     printf("Vowel");
