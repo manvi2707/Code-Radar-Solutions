@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int welcome() {
+char* welcome() {
     int num1 , num2;
     char symbol;
     scanf("%d %d %c" , &num1 , &num2 , &symbol);
@@ -18,8 +18,7 @@ int welcome() {
             return(c);
         }
         else{
-            printf("error");
-            return;
+            return("error")
         }
     }
     else if (symbol == '*'){
@@ -29,6 +28,6 @@ int welcome() {
 }
 
 int main() {
-    printf("%d", welcome());
+    printf("%c", welcome());
     return 0;
 }
