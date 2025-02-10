@@ -13,8 +13,13 @@ int welcome() {
         return(c);
     }
     else if (symbol == '/'){
-        int c = num1 / num2;
-        return(c);
+        if (num2 != 0){
+            int c = num1 / num2;
+            return(c);
+        }
+        else{
+            printf("Error");
+        }
     }
     else if (symbol == '*'){
         int c = num1 * num2;
