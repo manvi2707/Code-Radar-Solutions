@@ -3,32 +3,26 @@
 char* welcome() {
     int num , bit;
     int n = 0;
+    int rem;
     int *arr = (int*).malloc(100 * sizeof(int));
     scanf("%d %d" , &num , &bit);
-    if (num % 2 == 1){
-        arr[n] = 1;
+    while (num != 0){
+        rem = num % 2;
+        num = num / 2;
+        arr[n] = rem;
         n += 1;
-        num = num - 1;
     }
-    while(num != 1){
-        if (num % 2 == 0 && num == 2){
-            arr[n] = 1;
-        }
-        else if(num % 2 == 0 && num != 2){
-            arr[n] = 0;
-            n += 1;
-            num = num / 2;
-        }
-        else if(num % 2 == 1){
-            arr[n] = 1;
-            n += 1;
-            num = num / 2;
-        }
+    for (int i = bit; i < n - 1; i++){
+        arr[i] = arr[i + 1];
     }
-    return(arr);
+    int new_num = 0
+    for (int i = 0; i < n - 1; i++){
+        new_num += 2 * arr[i];
+    }
+    return(new_num);
 }
 
 int main() {
-    printf("%s", welcome());
+    printf("%d", welcome());
     return 0;
 }
