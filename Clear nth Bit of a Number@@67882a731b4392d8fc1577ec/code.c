@@ -7,8 +7,8 @@ char* welcome() {
     scanf("%d %d" , &num , &bit);
     if (num % 2 == 1){
         arr[n] = 1;
-        n += 1
-        num = num - 1
+        n += 1;
+        num = num - 1;
     }
     while(num != 1){
         if (num % 2 == 0 && num == 2){
