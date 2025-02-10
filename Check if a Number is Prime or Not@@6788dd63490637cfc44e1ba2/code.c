@@ -14,7 +14,7 @@ char* welcome() {
         return("Prime");
     }
     else{
-        return("Not Prime")
+        return("Not Prime");
     }
 }
 
