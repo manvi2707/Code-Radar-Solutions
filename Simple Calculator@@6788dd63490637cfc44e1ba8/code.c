@@ -19,7 +19,7 @@ int welcome() {
         }
         else{
             printf("error");
-            return -1;
+            return;
         }
     }
     else if (symbol == '*'){
