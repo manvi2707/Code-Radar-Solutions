@@ -18,7 +18,8 @@ int welcome() {
             return(c);
         }
         else{
-            return("error");
+            printf("error");
+            return 1;
         }
     }
     else if (symbol == '*'){
