@@ -13,7 +13,7 @@ char* welcome() {
         return("Divisible by 5");
     }
     else{
-        return("Nto Divisible");
+        return("Not Divisible");
     }
 }
 
