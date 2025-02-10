@@ -19,6 +19,7 @@ int welcome() {
         }
         else{
             printf("error");
+            return -1;
         }
     }
     else if (symbol == '*'){
@@ -28,6 +29,9 @@ int welcome() {
 }
 
 int main() {
-    printf("%d", welcome());
+    int result = welcome();
+    if (result != -1) {
+        printf("Result: %d\n", result);
+    }
     return 0;
 }
