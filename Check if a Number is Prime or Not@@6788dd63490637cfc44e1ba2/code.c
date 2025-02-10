@@ -6,8 +6,8 @@ char* welcome() {
     int count = 0;
     for (int i = 2; i < num; i++){
         if (num % i == 0){
-            count += 1
-            break
+            count += 1;
+            break;
         }
     }
     if (count == 0){
