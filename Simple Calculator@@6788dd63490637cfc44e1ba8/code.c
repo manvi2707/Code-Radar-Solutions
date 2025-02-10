@@ -13,8 +13,8 @@ int welcome() {
         return("%d" , c);
     }
     else if (symbol == '/'){
-        float c = num1 / num2;
-        return("%.0f" , c);
+        int c = num1 / num2;
+        return("%d" , c);
     }
     else if (symbol == '*'){
         int c = num1 * num2;
