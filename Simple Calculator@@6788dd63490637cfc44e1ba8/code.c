@@ -11,7 +11,7 @@ int welcome() {
         return("%d" , num1 - num2);
     }
     else if (symbol == '/'){
-        return("%.0f" , num1 / num2);
+        return("%d" , num1 / num2);
     }
     else if (symbol == '*'){
         return("%d" , num1 * num2);
