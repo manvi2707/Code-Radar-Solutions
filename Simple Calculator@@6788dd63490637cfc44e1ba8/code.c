@@ -6,19 +6,19 @@ int welcome() {
     scanf("%d %d %c" , &num1 , &num2 , &symbol);
     if  (symbol == '+'){
         int c = num1 + num2;
-        return("%d" , c);
+        return(c);
     }
     else if (symbol == '-'){
         int c = num1 - num2;
-        return("%d" , c);
+        return(c);
     }
     else if (symbol == '/'){
         int c = num1 / num2;
-        return("%d" , c);
+        return(c);
     }
     else if (symbol == '*'){
         int c = num1 * num2;
-        return ("%d" , c);
+        return (c);
     }
 }
 
