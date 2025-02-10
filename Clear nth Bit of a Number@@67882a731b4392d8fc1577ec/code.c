@@ -25,7 +25,7 @@ char* welcome() {
             num = num / 2;
         }
     }
-    return(arr)
+    return(arr);
 }
 
 int main() {
