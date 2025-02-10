@@ -5,17 +5,14 @@ int welcome() {
     char symbol;
     scanf("%d %d %c" , &num1 , &num2 , &symbol);
     if  (symbol == '+'){
-        int c = num1 + num2;
-        return(c);
+        return num1 + num2;
     }
     else if (symbol == '-'){
-        int c = num1 - num2;
-        return(c);
+        return num1 - num2;
     }
     else if (symbol == '/'){
         if (num2 != 0){
-            int c = num1 / num2;
-            return(c);
+            return num1 / num2;
         }
         else{
             printf("error");
@@ -23,12 +20,18 @@ int welcome() {
         }
     }
     else if (symbol == '*'){
-        int c = num1 * num2;
-        return (c);
+        return num1 * num2;
+    }
+    else {
+        printf("error");
+        return -1;
     }
 }
 
 int main() {
-    printf("%d", welcome());
+    int result = welcome();
+    if (result != -1){
+        printf("%d" , result);
+    }
     return 0;
 }
