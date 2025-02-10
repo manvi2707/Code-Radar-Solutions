@@ -5,16 +5,20 @@ int welcome() {
     char symbol;
     scanf("%d %d %c" , &num1 , &num2 , &symbol);
     if  (symbol == '+'){
-        return("%d" , num1 + num2);
+        int c = num1 * num2;
+        return("%d" , c);
     }
     else if (symbol == '-'){
-        return("%d" , num1 - num2);
+        int c = num1 * num2;
+        return("%d" , c);
     }
     else if (symbol == '/'){
-        return("%d" , num1 / num2);
+        int c = num1 * num2;
+        return("%d" , c);
     }
     else if (symbol == '*'){
-        return("%d" , num1 * num2);
+        int c = num1 * num2;
+        return ("%d" , c);
     }
 }
 
