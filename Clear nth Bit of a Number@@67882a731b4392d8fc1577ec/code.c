@@ -1,10 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 
-char* welcome() {
+int my_pow(int base , int exp){
+  int res = 1;
+  for (int i = 0; i < exp; i++){
+    res = res * base;
+  }
+  return res;
+  }
+int welcome() {
     int num , bit;
     int n = 0;
     int rem;
-    int *arr = (int*).malloc(100 * sizeof(int));
+    int *arr = (int*)malloc(100 * sizeof(int));
     scanf("%d %d" , &num , &bit);
     while (num != 0){
         rem = num % 2;
@@ -12,14 +20,18 @@ char* welcome() {
         arr[n] = rem;
         n += 1;
     }
-    for (int i = bit; i < n - 1; i++){
-        arr[i] = arr[i + 1];
+    for(int i = bit; i < n-1; i++){
+      arr[i] = arr[i+1];
     }
-    int new_num = 0
-    for (int i = 0; i < n - 1; i++){
-        new_num += 2 * arr[i];
+    int new_num = 0;
+    for (int i = 0; i < n-1; i++){
+      if (arr[i] == 1){
+        new_num += my_pow(2 , i);
+      }
     }
+    free(arr);
     return(new_num);
+    
 }
 
 int main() {
