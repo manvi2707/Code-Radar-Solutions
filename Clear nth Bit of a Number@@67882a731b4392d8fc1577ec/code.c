@@ -21,11 +21,9 @@ int welcome() {
         arr[n] = rem;
         n += 1;
     }
-    for(int i = bit; i < n-1; i++){
-      arr[i] = arr[i+1];
-    }
+    arr[bit] = 0;
     int new_num = 0;
-    for (int i = 0; i < n-1; i++){
+    for (int i = 0; i < n; i++){
       if (arr[i] == 1){
         new_num += my_pow(2 , i);
       }
