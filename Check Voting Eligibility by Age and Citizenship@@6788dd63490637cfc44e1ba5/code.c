@@ -7,7 +7,7 @@ char* welcome() {
         return("Eligible");
     }
     else{
-        return("Nto Eligible");
+        return("Not Eligible");
     }
 }
 
