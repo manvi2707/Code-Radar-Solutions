@@ -29,7 +29,6 @@ int welcome() {
         new_num += my_pow(2 , i);
       }
     }
-    free(arr);
     return(new_num);
     
 }
