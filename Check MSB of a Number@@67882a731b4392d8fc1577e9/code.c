@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 char* welcome() {
-    int num = 2147483648;
+    int num;
+    scanf("%d" , &num);
     int arr[32];
     int i = 0;
     int z = num;
