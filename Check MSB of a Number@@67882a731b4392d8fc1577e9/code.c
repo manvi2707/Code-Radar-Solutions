@@ -15,22 +15,14 @@ char* welcome() {
     if (num == 0){
       printf("Not Set");
     }
-    else if (num > 0){
-        if (arr[i-1] == 1){
-            printf("Set");
-        }
-        else{
-        printf("Not Set");
-        }
+    
+    else if (arr[i-1] == -1){
+        printf("Set");
     }
     else{
-        if (arr[i-1] == -1){
-            printf("Set");
-        }
-        else{
-        printf("Not Set");
-        }
+    printf("Not Set");
     }
+    
 }
 
 int main() {
