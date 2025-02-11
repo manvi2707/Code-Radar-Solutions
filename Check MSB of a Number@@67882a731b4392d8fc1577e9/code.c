@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 char* welcome() {
-    int num;
-    scanf("%d" , &num);
+    long int num;
+    scanf("%ld" , &num);
     int arr[32];
     int i = 0;
     while (num != 0){
