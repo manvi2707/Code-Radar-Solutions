@@ -6,7 +6,7 @@ int welcome() {
     int num , bit;
     int n = 0;
     int rem;
-    int arr = (int)malloc(100 * sizeof(int));
+    int arr[50];
     scanf("%d %d" , &num , &bit);
     while (num != 0){
         rem = num % 2;
