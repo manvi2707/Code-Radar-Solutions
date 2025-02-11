@@ -8,13 +8,14 @@ int main(){
     }
     else{
         if (num == 1 || num == 3 || num == 5 || num == 7 || num == 9 || num == 11){
-            return 31;
+            printf("31");
         }
         else if (num == 2){
-            return 28;
+            printf("28");
         }
         else {
-            return 30;
+            printf("30");
         }
     }
+    return 0;
 }
