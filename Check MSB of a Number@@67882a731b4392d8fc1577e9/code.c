@@ -3,6 +3,8 @@
 char* welcome() {
     long int num;
     scanf("%ld" , &num);
+    if (num<0)
+    num *= -1;
     int arr[32];
     int i = 0;
     while (num != 0){
