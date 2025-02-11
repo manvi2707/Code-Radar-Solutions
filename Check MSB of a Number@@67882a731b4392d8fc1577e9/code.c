@@ -10,7 +10,7 @@ char* welcome() {
         i += 1;
         num = num / 2;
     }
-    if (arr[i-1] == 1){
+    if (arr[i-1] == -1){
         printf("Set");
     }
     else{
