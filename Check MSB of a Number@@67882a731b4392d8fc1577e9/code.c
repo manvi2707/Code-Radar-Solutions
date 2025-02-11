@@ -6,9 +6,12 @@ char* welcome() {
     if (num<0)
     num *= -1;
     int arr[32];
+    for (int i=0; i<=31; i++) {
+        arr[i] = 0;
+    }
     int i = 0;
     while (num != 0){
-        arr[i] = num%2;
+        arr[i] += num%2;
         i += 1;
         num /= 2;
     }
