@@ -2,13 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-int my_pow(int base , int exp){
-  int res = 1;
-  for (int i = 0; i < exp; i++){
-    res = res * base;
-  }
-  return res;
-  }
 int welcome() {
     int num , bit;
     int n = 0;
