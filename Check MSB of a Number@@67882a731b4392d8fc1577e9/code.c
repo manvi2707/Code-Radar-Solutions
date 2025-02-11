@@ -4,7 +4,7 @@ char* welcome() {
     int num;
     scanf("%d" , &num);
     int *arr = (int*)malloc(32 * sizeof(int));
-    int i = 0
+    int i = 0;
     while (num != 0){
         int rem = num % 2;
         arr[i]  = rem;
