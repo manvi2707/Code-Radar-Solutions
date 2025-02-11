@@ -15,7 +15,7 @@ char* welcome() {
         i += 1;
         num /= 2;
     }
-    if (arr[i-1] == 1){
+    if (arr[32-1] == 1){
         printf("Set");
     }
     else{
