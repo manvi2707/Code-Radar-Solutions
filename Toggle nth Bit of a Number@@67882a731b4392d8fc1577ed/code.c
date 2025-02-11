@@ -24,7 +24,7 @@ int welcome() {
     if (arr[bit] == 1){
         arr[bit] = 0;
     }
-    else{
+    else if (arr[bit] == 0){
         arr[bit] = 1;
     }
     int new_num = 0;
