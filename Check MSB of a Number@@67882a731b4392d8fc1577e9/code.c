@@ -4,6 +4,7 @@ char* welcome() {
     int num = 2147483648;
     int arr[32];
     int i = 0;
+    int z = num;
     while (num != 0){
         int rem = num % 2;
         arr[i]  = rem;
@@ -13,11 +14,21 @@ char* welcome() {
     if (num == 0){
       printf("Not Set");
     }
-    else if (arr[i-1] == -1){
-        printf("Set");
+    else if (num > 0){
+        if (arr[i-1] == 1){
+            printf("Set");
+        }
+        else{
+        printf("Not Set");
+        }
     }
     else{
+        if (arr[i-1] == -1){
+            printf("Set");
+        }
+        else{
         printf("Not Set");
+        }
     }
 }
 
