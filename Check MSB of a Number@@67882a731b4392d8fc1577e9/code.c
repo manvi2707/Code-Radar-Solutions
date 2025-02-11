@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 char* welcome() {
-    long int num;
-    scanf("%ld" , &num);
+    int num = 2147483648;
     int arr[32];
     int i = 0;
     while (num != 0){
-        arr[i] = num%2;
+        int rem = num % 2;
+        arr[i]  = rem;
         i += 1;
-        num /= 2;
+        num = num / 2;
     }
     if (arr[i-1] == 1){
         printf("Set");
