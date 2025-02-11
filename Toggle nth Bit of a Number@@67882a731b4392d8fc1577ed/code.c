@@ -21,7 +21,12 @@ int welcome() {
         arr[n] = rem;
         n += 1;
     }
-    arr[bit] = 0;
+    if (arr[bit] == 1){
+        arr[bit] = 0;
+    }
+    else{
+        arr[bit] = 1;
+    }
     int new_num = 0;
     for (int i = 0; i < n; i++){
       if (arr[i] == 1){
