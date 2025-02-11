@@ -14,7 +14,7 @@ int welcome() {
         arr[n] = rem;
         n += 1;
     }
-    int req = arr[bit];
+    int req = arr[bit-1];
     return req;
 }
 
