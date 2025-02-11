@@ -6,12 +6,11 @@ char* welcome() {
     int arr[32];
     int i = 0;
     while (num != 0){
-        int rem = num % 2;
-        arr[i] = rem;
+        arr[i] = num %2;
         i += 1;
-        num = num / 2;
+        num /= 2;
     }
-    if (arr[i - 1] == -1){
+    if (arr[i - 1] == 1){
         printf("Set");
     }
     else{
