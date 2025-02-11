@@ -27,5 +27,5 @@ int welcome() {
 
 int main() {
     printf("%d", welcome());
-    return 0;
+    return 0;
 }
