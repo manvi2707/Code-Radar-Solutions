@@ -1,9 +1,17 @@
 #include <stdio.h>
 
 char* welcome() {
-    int n,m;
-    scanf("%d" , &n);
-    if (n ^ 1 == 1){
+    int num;
+    scanf("%d" , &num);
+    int *arr = (int*)malloc(32 * sizeof(int));
+    int i = 0
+    while (num != 0){
+        int rem = num % 2;
+        arr[i]  = rem;
+        i += 1;
+        num = num / 2;
+    }
+    if (arr[-1] == 1){
         printf("Set");
     }
     else{
