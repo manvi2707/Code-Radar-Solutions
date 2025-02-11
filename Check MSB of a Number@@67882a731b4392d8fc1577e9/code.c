@@ -12,14 +12,14 @@ char* welcome() {
         num = num / 2;
     }
     if (arr[i - 1] == 1){
-        return("Set");
+        printf("Set");
     }
     else{
-        return("Not Set");
+        printf("Not Set");
     }
 }
 
 int main() {
-    printf("%c" , welcome());
+    welcome();
     return 0;
 }
