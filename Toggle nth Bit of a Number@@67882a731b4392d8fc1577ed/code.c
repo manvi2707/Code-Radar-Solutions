@@ -21,6 +21,10 @@ int welcome() {
         arr[n] = rem;
         n += 1;
     }
+    while (n != 33){
+        arr[n] = 0;
+        n += 1;
+    }
     if (arr[bit] == 1){
         arr[bit] = 0;
     }
