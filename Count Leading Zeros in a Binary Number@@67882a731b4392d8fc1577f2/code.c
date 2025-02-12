@@ -20,5 +20,6 @@ int main(){
             break;
         }
     }
-    return num_zero;
+    printf("%d" , new_zero);
+    return 0;
 }
