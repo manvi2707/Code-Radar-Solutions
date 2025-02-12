@@ -1,12 +1,5 @@
 #include <stdio.h>
-
-int pow(int num , int power){
-    int res = 1;
-    for(int i = 0; i < power; i++){
-        res *= num;
-    }
-    return res;
-}
+#include <math.h>
 int main(){
     int num;
     scanf("%d" , &num);
