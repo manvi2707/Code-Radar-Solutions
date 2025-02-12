@@ -20,5 +20,5 @@ int main(){
             break;
         }
     }
-    return num_zero
+    return num_zero;
 }
