@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
-    int num;
-    scanf("%d" , &num);
+    long int num;
+    scanf("%ld" , &num);
     int arr[32];
     int n = 0;
     while (num != 0){
