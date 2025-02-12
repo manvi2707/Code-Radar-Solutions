@@ -17,7 +17,7 @@ int main(){
             num_zero += 1;
         }
         else{
-            break
+            break;
         }
     }
     return num_zero
