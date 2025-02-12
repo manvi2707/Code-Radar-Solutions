@@ -17,7 +17,7 @@ int main(){
     int req = 0;
     for(int i = 0; i < 33; i++){
         if (arr[i] == 1){
-            req += pow(2 , i);
+            req += int(pow(2 , i));
             }
     }
    printf("%d" , req);
