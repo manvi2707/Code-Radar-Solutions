@@ -2,7 +2,7 @@
 int main(){
     int num;
     scanf("%d" , &num);
-    n = 0;
+    int n = 0;
     int arr[32];
     while (num != 0){
         int rem = num % 2;
