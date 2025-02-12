@@ -16,9 +16,6 @@ int main(){
         if (arr[i] == 0){
             num_zero += 1;
         }
-        else{
-            break;
-        }
     }
     printf("%d" , num_zero);
     return 0;
