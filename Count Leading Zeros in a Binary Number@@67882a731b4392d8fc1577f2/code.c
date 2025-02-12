@@ -10,7 +10,7 @@ int main(){
         n += 1;
         num = num / 2;
     }
-    int num_zero = 33 - n;
+    int num_zero = 32 - n;
     
     for(int i = n-1; i >= 0; i--){
         if (arr[i] == 0){
