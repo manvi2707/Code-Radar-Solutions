@@ -2,9 +2,10 @@
 int main(){
     int num;
     scanf("%d" , &num);
-
-    for(int i = -1; i < num; i++){
-        for (int j = 0; j < i + 2; j++){
+    int n = -1;
+    for(int i = 0; i < num; i++){
+        n += 2;
+        for(int j = 0; j < n; j++ ){
             printf("*");
         }
         printf("\n");
