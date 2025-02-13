@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 int main(){
-    int num;
+    unsigned int num;
     scanf("%d" , &num);
     int n = 0;
     int arr[32];
@@ -10,6 +10,9 @@ int main(){
         arr[n] = 1 ^ rem;
         n += 1;
         num = num / 2;
+    }
+    for (int i = n; n < 33; i++){
+        arr[n] = 0;
     }
     for (int i = n; i < 32; i++){
         arr[i] = 1;
