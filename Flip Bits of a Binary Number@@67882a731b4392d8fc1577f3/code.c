@@ -12,7 +12,7 @@ int main(){
         num = num / 2;
     }
     for (int i = n; i < 33; i++){
-        arr[i] = !0;
+        arr[i] = 1;
     }
     int req = 0;
     for(int i = 0; i < 33; i++){
