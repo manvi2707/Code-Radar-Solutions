@@ -11,7 +11,7 @@ int main(){
         n += 1;
         num = num / 2;
     }
-    for (int i = n; n < 33; i++){
+    for (int i = n; n < 32; i++){
         arr[n] = 0;
     }
     for (int i = n; i < 32; i++){
