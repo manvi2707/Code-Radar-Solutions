@@ -1,27 +1,28 @@
 #include <stdio.h>
-
-int main() {
-    unsigned int num;  // Use unsigned for proper bitwise operations
-    scanf("%u", &num);
-
-    int arr[32];
+#include <math.h>
+int main(){
+    int num;
+    scanf("%d" , &num);
     int n = 0;
-
-    // Convert to binary and flip bits
-    for (int i = 0; i < 32; i++) {
+    int arr[32];
+    while(num != 0){
         int rem = num % 2;
-        arr[i] = rem ^ 1; // XOR with 1 flips bits
-        num /= 2;
+        arr[n] = 1 ^ rem;
+        n += 1;
+        num = num / 2;
     }
-
-    // Convert back to integer
-    unsigned int req = 0;
-    for (int i = 0; i < 32; i++) {
-        if (arr[i] == 1) {
-            req += (1U << i); // Use bitwise shift instead of pow()
-        }
+    for (int i = n; n < 32; i++){
+        arr[n] = 0;
     }
-
-    printf("%u\n", req);
-    return 0;
+    for (int i = n; i < 32; i++){
+        arr[i] = 1;
+    }
+    int req = 0;
+    for(int i = 0; i < 32; i++){
+        if (arr[i] == 1){
+            req += (1 << i);
+            }
+    }
+   printf("%d" , req);
+   return 0; 
 }
