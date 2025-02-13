@@ -15,7 +15,7 @@ int main(){
         for (int j = 0; j < space; j++){
             printf(" ");
         }
-        space -= 2;
+        space -= 1;
         star += 2;
         printf("\n");
     }
