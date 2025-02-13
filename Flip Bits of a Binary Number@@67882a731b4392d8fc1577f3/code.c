@@ -7,7 +7,7 @@ int main(){
     int arr[32];
     while(num != 0){
         int rem = num % 2;
-        arr[n] = !rem;
+        arr[n] = 1 ^ rem;
         n += 1;
         num = num / 2;
     }
