@@ -2,8 +2,8 @@
 int main(){
     int num;
     scanf("%d" , &num);
-    space = num - 1;
-    star = 1;
+    int space = num - 1;
+    int star = 1;
     for (int i = 1; i <= num; i++){
         for (int j = 0; j < space; j++){
             printf(" ");
