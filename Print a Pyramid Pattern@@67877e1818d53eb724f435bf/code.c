@@ -6,7 +6,7 @@ int main(){
     int star =  1;
     int space;
     if (n % 2 == 0){
-        space = n / 2;
+        space = (n-2) / 2;
     }
     else{
         space = (n-1) / 2;
