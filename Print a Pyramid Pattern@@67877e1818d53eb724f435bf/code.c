@@ -12,7 +12,7 @@ int main(){
             printf("*");
         }
         for (int j = 0; j < space; j++){
-            printf(" ")
+            printf(" ");
         }
         space -= 1;
         star += 2;
