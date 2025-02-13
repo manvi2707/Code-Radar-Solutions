@@ -2,15 +2,8 @@
 int main(){
     int num;
     scanf("%d" , &num);
-    int n = num + 2;
-    int star =  1;
-    int space;
-    if (n % 2 == 0){
-        space = (n-2) / 2;
-    }
-    else{
-        space = (n-1) / 2;
-    }
+    int space = num - 1;
+    int star = 1;
     for (int i = 0; i < num; i++){
         for (int j = 0; j < space; j++){
             printf(" ");
@@ -19,11 +12,10 @@ int main(){
             printf("*");
         }
         for (int j = 0; j < space; j++){
-            printf(" ");
+            printf(" ")
         }
         space -= 1;
         star += 2;
-        printf("\n");
     }
     return 0;
 }
