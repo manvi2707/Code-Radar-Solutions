@@ -14,9 +14,6 @@ int main(){
     for (int i = n; n < 32; i++){
         arr[n] = 0;
     }
-    for (int i = n; i < 32; i++){
-        arr[i] = 1;
-    }
     int req = 0;
     for(int i = 0; i < 32; i++){
         if (arr[i] == 1){
