@@ -16,7 +16,7 @@ int main(){
         star += 2;
     }
     space = 1;
-    star -= 2;
+    star -= 4;
     for (int i = 1; i < num; i++){
         for(int j = 0; j < space; j++){
             printf(" ");
