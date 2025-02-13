@@ -11,13 +11,13 @@ int main(){
         n += 1;
         num = num / 2;
     }
-    for (int i = n; i < 33; i++){
+    for (int i = n; i < 32; i++){
         arr[i] = 1;
     }
     int req = 0;
-    for(int i = 0; i < 33; i++){
+    for(int i = 0; i < 32; i++){
         if (arr[i] == 1){
-            req += int(pow(2 , i));
+            req += (1 << i);
             }
     }
    printf("%d" , req);
