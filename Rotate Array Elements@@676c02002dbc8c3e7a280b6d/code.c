@@ -15,4 +15,5 @@ int main(){
     for(int i = 0; i<num-k; i++){
         printf("%d\n" , arr[i]);
     }
+    return 0;
 }
