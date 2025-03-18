@@ -7,7 +7,7 @@ int main(){
     scanf("%d" , &num);
     for(int i = 0; i<num; i++){
         for(int j = 0; j<=i; j++){
-            if(i != num-1){
+            if(i != num-1 && j==0){
                 for(space = 0; space <num-1-i; space++){
                     printf(" ");
                 }
