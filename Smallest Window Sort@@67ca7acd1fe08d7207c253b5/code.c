@@ -26,6 +26,12 @@ int findUnsortedSubarray(int arr[] , int n){
             break;
         }
     }
-    int cout = num2 - num1 + 1;
+    int cout;
+    if(num1 == 0 && num2 == 0){
+        cout = 0;
+    }
+    else{
+        cout = num2 - num1 + 1;
+    }
     return cout;
 }
