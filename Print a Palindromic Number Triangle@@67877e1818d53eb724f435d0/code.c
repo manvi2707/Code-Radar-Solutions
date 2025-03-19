@@ -5,6 +5,7 @@ int main(){
     int k = 2;
     int line = 1;
     for(int i = num; i>0; i--){
+        int m = line;
         for(int j = 1; j<i; j++){
             printf(" ");
         }
@@ -13,12 +14,11 @@ int main(){
                 printf("%d" , j);
             }
             else{
-                printf("%d" , m-1);
                 m -= 1;
+                printf("%d" , m);
             }
         }
         line += 1;
-        int m = line;
         k+= 2;
         printf("\n");
     }
