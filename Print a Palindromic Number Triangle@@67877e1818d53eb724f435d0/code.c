@@ -20,6 +20,7 @@ int main(){
         }
         line = 1;
         k+= 2;
+        printf("\n");
     }
     return 0;
 }
