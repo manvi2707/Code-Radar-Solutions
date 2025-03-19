@@ -13,10 +13,12 @@ int main(){
                 printf("%d" , j);
             }
             else{
-                printf("%d" , j-line);
+                printf("%d" , m-1);
+                m -= 1;
             }
         }
         line += 1;
+        int m = line;
         k+= 2;
         printf("\n");
     }
