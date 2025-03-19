@@ -18,5 +18,5 @@ int findUnsortedSubarray(int arr[] , int n){
             cout += 1;
         }
     }
-    printf("%d\n" , cout);
+    return cout;
 }
