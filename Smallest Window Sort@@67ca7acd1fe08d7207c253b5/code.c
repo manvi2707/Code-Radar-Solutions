@@ -1,5 +1,5 @@
 int findUnsortedSubarray(int arr[] , int n){
-    int temp[n];
+    int temp[20];
     for(int i = 0; i<n; i++){
         temp[i] = arr[i];
     }
