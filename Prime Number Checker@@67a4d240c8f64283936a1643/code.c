@@ -1,5 +1,5 @@
 #include<stdio.h>
-void isPrime(int num){
+int isPrime(int num){
     int cout = 0;
     if(num == 0 || num == 1 || num == 2){
         printf("%d\n" , 1);
