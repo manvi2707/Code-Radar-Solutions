@@ -8,7 +8,7 @@ int isPrime(int num){
             cout += 1;
         }
     }
-    if(cout == 0){
+    if(cout == 0 && num != 1){
         return 1;
     }
     else{
