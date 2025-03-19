@@ -3,11 +3,12 @@ int main(){
     int num;
     scanf("%d" , &num);
     for(int i = 0; i<num; i++){
+        int s;
         if(i % 2 == 0){
-            int s = 1;
+            s = 1;
         }
         else{
-            int s = 0;
+            s = 0;
         }
         for(int j = 0; j<=i; j++){
             if(s == 1){
