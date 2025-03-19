@@ -9,9 +9,9 @@ int isPrime(int num){
         }
     }
     if(cout == 0){
-        printf("%d\n" , 1);
+        return 1;
     }
     else{
-        printf("%d\n" , 0);
+        return 0;
     }
 }
