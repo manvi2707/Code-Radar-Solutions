@@ -17,11 +17,13 @@ int findUnsortedSubarray(int arr[] , int n){
     for(int i = 0; i<n; i++){
         if(temp[i] != arr[i]){
             num1 = i;
+            break;
         }
     }
     for(int i = n-1; i>=0; i--){
         if(temp[i] != arr[i]){
             num2 = i;
+            break;
         }
     }
     int cout = num2 - num1 + 1;
