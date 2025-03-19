@@ -4,6 +4,6 @@ int main(){
     for(int i = 1; i<=num; i++){
         s = s + i;
     }
-    printf("%d" , sum);
+    printf("%d" , s);
     return 0;
 }
