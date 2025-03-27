@@ -19,14 +19,13 @@ int main(){
         }
         else{
             n++;
-            printf("%d\n" , n);
         }
     }
     if(arr[num-1] > arr[num-2] && n != 0){
         printf("%d" , arr[num-1]);
         n = 1;
     }
-    if(n == num){
+    if(n == num-2){
         printf("-1");
     }
     return 0;
