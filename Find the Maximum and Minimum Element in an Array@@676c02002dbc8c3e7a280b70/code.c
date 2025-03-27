@@ -6,9 +6,9 @@ int main(){
     for(int i = 0; i<num; i++){
         scanf("%d" , &arr[i]);
     }
-    int max = -100000;
-    int min  = 100000;
-    for(int i = 0; i<num; i++){
+    int max =arr[0];
+    int min  = arr[0];
+    for(int i = 1; i<num; i++){
         if(arr[i] > max){
             max = arr[i];
         }
