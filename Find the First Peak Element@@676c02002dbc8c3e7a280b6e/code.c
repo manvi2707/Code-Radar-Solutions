@@ -25,8 +25,7 @@ int main(){
         printf("%d" , arr[num-1]);
         n = 1;
     }
-    printf("%d" , n);
-    if(n == num-2){
+    if(n == num-1){
         printf("%d" , -1);
     }
     return 0;
