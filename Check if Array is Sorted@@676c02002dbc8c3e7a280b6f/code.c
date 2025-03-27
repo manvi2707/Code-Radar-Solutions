@@ -13,7 +13,7 @@ int main(){
             break;
         }
         else{
-            n += 1;
+            n ++;
         }
     }
     if(n == num){
