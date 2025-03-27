@@ -26,7 +26,7 @@ int main(){
         n = 1;
     }
     else if(n == num-2){
-        printf("-1");
+        printf("%d" , -1);
     }
     return 0;
 }
