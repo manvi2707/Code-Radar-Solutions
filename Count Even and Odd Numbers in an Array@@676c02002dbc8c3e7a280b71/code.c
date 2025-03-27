@@ -3,7 +3,7 @@ int main(){
     int num;
     scanf("%d" , &num);
     int arr[num];
-    fort(int i = 0; i<num; i++){
+    for(int i = 0; i<num; i++){
         scanf("%d" , &arr[i]);
     }
     int even_num = 0;
