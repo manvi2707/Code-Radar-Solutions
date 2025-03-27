@@ -26,7 +26,7 @@ int main(){
         n = 1;
     }
     printf("%d" , n);
-    else if(n == num){
+    if(n == num){
         printf("-1");
     }
     return 0;
