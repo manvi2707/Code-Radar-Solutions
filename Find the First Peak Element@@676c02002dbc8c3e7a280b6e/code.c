@@ -18,7 +18,7 @@ int main(){
             break;
         }
         else{
-            n++
+            n++;
         }
     }
     if(arr[num-1] > arr[num-2] && n != 0){
