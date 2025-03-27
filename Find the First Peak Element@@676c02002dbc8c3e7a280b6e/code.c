@@ -17,9 +17,16 @@ int main(){
             n = 0;
             break;
         }
+        else{
+            n++
+        }
     }
     if(arr[num-1] > arr[num-2] && n != 0){
         printf("%d" , arr[num-1]);
+        n = 1;
+    }
+    if(n == num){
+        printf(-1);
     }
     return 0;
 }
