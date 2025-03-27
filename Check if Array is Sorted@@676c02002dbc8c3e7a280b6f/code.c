@@ -9,7 +9,7 @@ int main(){
     int n = 1;
     for(int i = 1; i<num; i++){
         if(arr[i-1] > arr[i]){
-            printf("Not sorted");
+            printf("Not Sorted");
             break;
         }
         else{
