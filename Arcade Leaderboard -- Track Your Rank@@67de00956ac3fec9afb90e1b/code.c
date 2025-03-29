@@ -1,40 +1,46 @@
-#include<stdio.h>
-void trackPlayerRanks(int ranked[] , int n, int player[] , int m , int result[]){
-    int new_ranked[100];
-    int j = 0;
-    for(int i = 0; i<n-1; i++){
-        if (ranked[i] != ranked[i+1]){
-            new_ranked[j] = ranked[i];
-            j++;
-        }
-    }
-    if(ranked[n-1] != ranked[n-2]){
-        new_ranked[j] = ranked[n-1];
-        j++;
-    }
-    int p = 0;
-    for(int i = 0; i<m; i++){
-        new_ranked[j] = player[i];
-        j++;
-        for(int k = 0; k<j; k++){
-            if(new_ranked[i] < new_ranked[i+1]){
-                int temp = new_ranked[i];
-                new_ranked[i] = new_ranked[i+1];
-                new_ranked[i+1] = temp;
-            }
+#include <stdio.h>
 
+void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]) {
+    int unique_ranked[100], j = 0;
+
+    // Removing duplicates from ranked array
+    unique_ranked[j++] = ranked[0];
+    for (int i = 1; i < n; i++) {
+        if (ranked[i] != ranked[i - 1]) {
+            unique_ranked[j++] = ranked[i];
         }
-        int s = 0;
-        while(s != j){
-            if(new_ranked[s] == player[i]){
-                result[p] = s;
-                p++;
-            }
+    }
+
+    // Finding ranks for each player's score
+    int rankIndex = j - 1;  // Start from the lowest rank
+    for (int i = 0; i < m; i++) {
+        while (rankIndex >= 0 && player[i] >= unique_ranked[rankIndex]) {
+            rankIndex--;  // Move up the leaderboard
+        }
+        result[i] = rankIndex + 2; // +2 because index starts from 0
+    }
+}
+
+int main() {
+    int ranked[] = {100, 100, 50, 40, 40, 20, 10};
+    int n = sizeof(ranked) / sizeof(ranked[0]);
+    int player[] = {5, 25, 50, 120};
+    int m = sizeof(player) / sizeof(player[0]);
+    int result[m];
+
+    trackPlayerRanks(ranked, n, player, m, result);
+
+    // Print results
+    for (int i = 0; i < m; i++) {
+        printf("%d\n", result[i]);
+    }
+    return 0;
+}
+
             else{
                 s++;
             }
         }
     }
-    return;
 
 }
