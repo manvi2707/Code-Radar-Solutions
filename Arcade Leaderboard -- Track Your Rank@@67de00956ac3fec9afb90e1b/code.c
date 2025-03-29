@@ -20,27 +20,3 @@ void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]) {
         result[i] = rankIndex + 2; // +2 because index starts from 0
     }
 }
-
-int main() {
-    int ranked[] = {100, 100, 50, 40, 40, 20, 10};
-    int n = sizeof(ranked) / sizeof(ranked[0]);
-    int player[] = {5, 25, 50, 120};
-    int m = sizeof(player) / sizeof(player[0]);
-    int result[m];
-
-    trackPlayerRanks(ranked, n, player, m, result);
-
-    // Print results
-    for (int i = 0; i < m; i++) {
-        printf("%d\n", result[i]);
-    }
-    return 0;
-}
-
-            else{
-                s++;
-            }
-        }
-    }
-
-}
