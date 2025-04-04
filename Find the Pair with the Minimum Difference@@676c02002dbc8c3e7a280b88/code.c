@@ -6,8 +6,8 @@ int main(){
         scanf("%d" , &arr[i]);
     }
     int min = 1000000;
-    int *num1 = 100;
-    int *num2 = 1000;
+    int *num1 = &100;
+    int *num2 = &1000;
     for(int i = 0; i<N; i++){
         for(int j = i+1; j<N; j++){
             if(arr[i]>arr[j] && arr[i]-arr[j]<min){
@@ -22,6 +22,6 @@ int main(){
             }
         }
     }
-    printf("%d %d" , num2 , num1);
+    printf("%d %d" , *num2 , *num1);
     return 0;
 }
