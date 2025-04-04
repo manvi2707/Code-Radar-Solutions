@@ -2,20 +2,20 @@
 void deflateBalloons(int air[] , int n){
     int unique[n];
     int j = 1;
+    for(int i = 0; i<n; i++){
+        for(int k = 0; k<n; k++){
+            if(air[i] < air[k]){
+                int temp = air[i];
+                air[i] = air[k];
+                air[k] = temp;
+            }
+        }
+    } 
     unique[0] = air[0];
     for(int i = 1; i<n; i++){
         if(air[i] != air[i-1]){
             unique[j] = air[i];
             j++;
-        }
-    }
-    for(int i = 0; i<j; i++){
-        for(int k = 0; k<j; k++){
-            if(unique[i] < unique[k]){
-                int temp = unique[i];
-                unique[i] = unique[k];
-                unique[k] = temp;
-            }
         }
     }
     for(int i = 0; i<j; i++){
