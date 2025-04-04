@@ -1,0 +1,8 @@
+#include<stdio.h>
+int findPrankReceiver(int n , int m , int s){
+    int req = m + s -1;
+    while(req>n){
+        req -= n;
+    }
+    return req;
+}
