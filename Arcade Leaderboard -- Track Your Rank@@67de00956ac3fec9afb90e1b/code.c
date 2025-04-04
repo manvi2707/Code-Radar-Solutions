@@ -31,7 +31,7 @@ void trackPlayerRanks(int ranked[] , int n, int player[] , int m , int result[])
             else if(player[i] == unique[k]){
                 unique[k+1] = unique[k];
                 unique[k] = player[i];
-                position = k;
+                position = k+1;
                 result[p] = position;
             }
         }
