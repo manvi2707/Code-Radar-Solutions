@@ -15,7 +15,7 @@ int mountainPeak(int N){
     else{
         while(N!=0){
             int digit = N % 10;
-            int arr[j] = digit;
+            arr[j] = digit;
             j++;
             if(digit > max){
                 max = digit;
