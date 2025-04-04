@@ -6,7 +6,7 @@ int incrementToPrimeDigits(int N){
         n = n*10 + (N%10);
         N = N / 10;
     }
-    if n == 0{
+    if (n == 0){
         prime = 2;
     }
     while(n != 0){
