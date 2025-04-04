@@ -9,8 +9,7 @@ int main(){
     int min = 1000000;
     int num1 , num2;
     if(N < 2){
-        num1 = 0;
-        num2 = 0;
+        return -1;
     }
     else{
         for(int i = 0; i<N; i++){
