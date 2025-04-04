@@ -9,6 +9,7 @@ int main(){
     int min = 1000000;
     int num1 , num2;
     if(N < 2){
+        printf("-1");
         return -1;
     }
     else{
