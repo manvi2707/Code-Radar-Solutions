@@ -8,7 +8,7 @@ int facto(int N){
     return result;
 }
 void factorialRange(int start , int end){
-    if(start < 0 || end < 0){
+    if(start < 0 || end < 0 || start > end){
         printf("Invalid range");
     }
     else{
