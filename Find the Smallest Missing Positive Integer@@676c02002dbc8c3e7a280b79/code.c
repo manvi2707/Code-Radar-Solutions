@@ -28,7 +28,7 @@ int main(){
         }
         else{
             printf("%d" , num);
-            break
+            break;
         }
     }
     return 0;
