@@ -11,7 +11,7 @@ int mostPlayedGame(int games[] , int n){
     }
     for(int i = 0; i<j; i++){
         for(int k = 0; k<j; k++){
-            if(uni[i]<uni[k]){
+            if(uni[i]>uni[k]){
                 int temp = uni[i];
                 uni[i] = uni[k];
                 uni[k] = temp;
