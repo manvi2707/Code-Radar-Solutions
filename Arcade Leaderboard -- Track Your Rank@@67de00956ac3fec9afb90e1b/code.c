@@ -18,7 +18,6 @@ void trackPlayerRanks(int ranked[] , int n, int player[] , int m , int result[])
             if(player[i] > unique[k]){
                 unique[k+1] = unique[k];
                 unique[k] = player[i]; 
-                printf("%d\n" , k);
                 position = k;
             }
             else if(player[i] < unique[j]){
