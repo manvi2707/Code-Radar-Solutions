@@ -1,5 +1,5 @@
 #include<stdio.h>
-void deflatedballoons(int air[] , int n){
+void deflatedBalloons(int air[] , int n){
     int unique[n];
     int j = 1;
     unique[0] = air[0];
