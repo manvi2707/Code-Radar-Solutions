@@ -1,5 +1,9 @@
 #include<stdio.h>
 int totalLikes(int n){
+    if(n == 0){
+        liked = 0;
+        return liked;
+    }
     int start = 5;
     int liked = 5/2;
     int shared;
