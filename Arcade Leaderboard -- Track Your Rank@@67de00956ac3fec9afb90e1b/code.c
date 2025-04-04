@@ -14,7 +14,7 @@ void trackPlayerRanks(int ranked[] , int n, int player[] , int m , int result[])
     int position;
     int p = 0;
     for(int i = 0; i<m; i++){
-        for(int k = j; k<=0; k--){
+        for(int k = j; k>=0; k--){
             if(player[i] > unique[k]){
                 unique[k+1] = unique[k];
                 unique[k] = player[i]; 
