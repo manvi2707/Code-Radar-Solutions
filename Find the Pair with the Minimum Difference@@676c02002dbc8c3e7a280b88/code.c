@@ -6,19 +6,19 @@ int main(){
         scanf("%d" , &arr[i]);
     }
     int min = 1000000;
-    int num1 = 0;
-    int num2 = 0;
+    int *num1 = 100;
+    int *num2 = 1000;
     for(int i = 0; i<N; i++){
         for(int j = i+1; j<N; j++){
             if(arr[i]>arr[j] && arr[i]-arr[j]<min){
                 min = arr[i] - arr[j];
-                num1 = arr[i];
-                num2 = arr[j];
+                &num1 = arr[i];
+                &num2 = arr[j];
             }
             else if(arr[j]>arr[i] && arr[j]-arr[i]<min){
                 min = arr[j]-arr[i];
-                num1 = arr[j];
-                num2 = arr[i];
+                &num1 = arr[j];
+                &num2 = arr[i];
             }
         }
     }
