@@ -26,11 +26,11 @@ int main(){
     for(int i = p; i<N; i++){
         if(num == arr[i]){
             num++;
-            term = true;
+            term = 1;
         }
         else{
             printf("%d" , num);
-            term = false;
+            term = 0;
             break;
         }
     }
