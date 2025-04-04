@@ -22,14 +22,20 @@ int main(){
         }
     }
     int num = 1;
+    bool term;
     for(int i = p; i<N; i++){
         if(num == arr[i]){
             num++;
+            term = true;
         }
         else{
             printf("%d" , num);
+            term = false;
             break;
         }
+    }
+    if(term){
+        printf("%d" , num);
     }
     return 0;
 }
