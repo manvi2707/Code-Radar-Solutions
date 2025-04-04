@@ -20,9 +20,9 @@ void trackPlayerRanks(int ranked[] , int n, int player[] , int m , int result[])
                 unique[k] = player[i]; 
                 position = k;
             }
-            else{
-                unique[k+1] = player[i];
-                position = k+1;
+            else if(player[i] < unique[j]){
+                unique[j+1] = player[i];
+                position = j+1;
             }
         }
         j = sizeof(unique) / sizeof(int);
