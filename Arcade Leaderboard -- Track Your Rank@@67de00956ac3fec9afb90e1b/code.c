@@ -11,23 +11,25 @@ void trackPlayerRanks(int ranked[] , int n, int player[] , int m , int result[])
     if(ranked[n-1] != ranked[n-2]){
         unique[j] = ranked[n-1];
     }
+    
     int position;
     int p = 0;
     for(int i = 0; i<m; i++){
         for(int k = j; k>=0; k--){
-            if(player[i] > unique[k]){
-                unique[k+1] = unique[k];
-                unique[k] = player[i]; 
-                position = k;
-            }
-            else if(player[i] < unique[j]){
+            if(player[i] < unique[j]){
                 unique[j+1] = player[i];
-                position = j+1;
+                position = j+2;
+                result[p] = position;
                 break;
             }
+            else if(player[i] > unique[k]){
+                unique[k+1] = unique[k];
+                unique[k] = player[i];
+                position = k+1;
+                result[p] = position;
+            }
         }
-        j = sizeof(unique) / sizeof(int);
-        ranked[p] = position;
+        j++;
         p++;
     }
 }
