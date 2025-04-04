@@ -6,10 +6,10 @@ int mountainPeak(int N){
         copy /= 10;
         l++;
     }
+    int max = -1000;
     if(l < 3){
         return -1;
     }
-    int max = -1000;
     else{
         while(N!=0){
             int digit = N % 10;
