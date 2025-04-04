@@ -11,7 +11,7 @@ void deflateBalloons(int air[] , int n){
     }
     for(int i = 0; i<j; i++){
         for(int k = 0; k<j; k++){
-            if(unique[i] > unique[k]){
+            if(unique[i] < unique[k]){
                 int temp = unique[i];
                 unique[i] = unique[k];
                 unique[k] = temp;
@@ -23,8 +23,7 @@ void deflateBalloons(int air[] , int n){
     printf("%d\n" , n);
     int i = 0;
     for(int m = 0; m<j-1; m++){
-        while(i!=n-1){
-            printf("%d" , unique[m]);
+        while(i!=n-1){;
             if(air[i] == unique[m]){
                 for(int k = i; k<n-1; k++){
                     air[k] = air[k+1];
