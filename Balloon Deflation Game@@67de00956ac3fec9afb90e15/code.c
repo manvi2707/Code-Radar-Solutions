@@ -18,11 +18,14 @@ void deflateBalloons(int air[] , int n){
             }
         }
     }
+    for(int i = 0; i<j; i++){
+        printf("uni: ");
+        printf("%d " , unique[i]);
+    }
     int m = 0;
     int num = n;
     printf("%d\n" , n);
     int i = 0;
-    printf("%d" , j);
     for(int m = 0; m<j-1; m++){
         while(i!=n-1){;
             if(air[i] == unique[m]){
