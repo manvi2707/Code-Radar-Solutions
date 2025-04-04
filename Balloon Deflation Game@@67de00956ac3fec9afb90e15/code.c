@@ -36,5 +36,6 @@ void deflateBalloons(int air[] , int n){
             }
         }
         printf("%d\n" , num);
+        i = 0;
     }
 }
