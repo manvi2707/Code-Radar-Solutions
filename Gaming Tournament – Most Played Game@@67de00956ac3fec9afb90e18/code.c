@@ -18,7 +18,6 @@ int mostPlayedGame(int games[] , int n){
             }
         }
     }
-    printf("%d" , uni[0]);
     int num[j][2];
     int t = 0;
     int max = 0;
