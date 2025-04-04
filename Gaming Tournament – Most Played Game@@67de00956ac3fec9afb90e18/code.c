@@ -27,7 +27,7 @@ int mostPlayedGame(int games[] , int n){
                 t++;
             }
         }
-        num[i][0] = i;
+        num[i][0] = uni[i];
         num[i][1] = t;
         if(max < t){
             max = t;
