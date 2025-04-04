@@ -6,8 +6,8 @@ int main(){
         scanf("%d" , &arr[i]);
     }
     int min = 1000000;
-    int num1;
-    int num2;
+    int num1 = 0;
+    int num2 = 0;
     for(int i = 0; i<N; i++){
         for(int j = i+1; j<N; j++){
             if(arr[i]>arr[j] && arr[i]-arr[j]<min){
