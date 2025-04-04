@@ -1,9 +1,14 @@
 #include<stdio.h>
 int incrementToPrimeDigits(int N){
     int prime = 0;
+    int n = 0;
     while(N != 0){
-        int digit = N % 10;
-        if(digit == 0 || digit == 1 || digit == 2){
+        n = n*10 + (N%10);
+        N = N / 10;
+    }
+    while(n != 0){
+        int digit = n % 10;
+        if(digit == 0 || digit == 1){
             prime = prime*10 + 2;
         }
         else if(digit == 2){
@@ -18,7 +23,7 @@ int incrementToPrimeDigits(int N){
         else if(digit >= 7){
             prime = prime*10 + 2;
         }
-        N = N / 10;
+        n = n / 10;
     }
     return prime;
 }
