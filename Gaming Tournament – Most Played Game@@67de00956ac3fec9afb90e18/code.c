@@ -23,7 +23,7 @@ int mostPlayedGame(int games[] , int n){
     int max = 0;
     for(int i = 0; i<j; i++){
         for(int k = 0; k<n; k++){
-            if(games[k] = uni[i]){
+            if(games[k] == uni[i]){
                 t++;
             }
         }
