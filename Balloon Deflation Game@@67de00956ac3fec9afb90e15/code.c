@@ -21,24 +21,15 @@ void deflateBalloons(int air[] , int n){
     int m = 0;
     int num = n;
     printf("%d\n" , n);
-    int x = 1;
-    int i = 0;
     for(int m = 0; m<j-1; m++){
-        while(x!=n){
+        for(int i = 0; i<n; i++){
             if(air[i] == unique[m]){
                 for(int k = i; k<n-1; k++){
                     air[k] = air[k+1];
                 }
                 num--;
-                x--;
             }
-            else{
-                x++;
-                i++;
-            } 
         }
         printf("%d\n" , num);
-        n = num;
-        i = 0;
     }
 }
