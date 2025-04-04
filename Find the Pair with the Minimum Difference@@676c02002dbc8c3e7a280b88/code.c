@@ -7,7 +7,7 @@ int main(){
         scanf("%d" , &arr[i]);
     }
     int min = 1000000;
-    int num1 , num2;
+    int num1 = 10000, num2 = 10000;
     if(N < 2){
         printf("-1");
         return -1;
