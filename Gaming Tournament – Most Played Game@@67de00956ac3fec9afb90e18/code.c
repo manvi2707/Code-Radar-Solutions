@@ -38,6 +38,7 @@ int mostPlayedGame(int games[] , int n){
     for(int i = 0; i<j; i++){
         if(num[i][1] == max){
             req = num[i][0];
+            break;
         }
     }
     return req;
