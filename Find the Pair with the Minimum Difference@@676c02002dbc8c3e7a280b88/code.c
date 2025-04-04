@@ -10,15 +10,15 @@ int main(){
     int num2;
     for(int i = 0; i<N; i++){
         for(int j = i+1; j<N; j++){
-            if(i>j && i-j<min){
-                min = i-j;
-                num1 = i;
-                num2 = j;
+            if(arr[i]>arr[j] && arr[i]-arr[j]<min){
+                min = arr[i] - arr[j];
+                num1 = arr[i];
+                num2 = arr[j];
             }
-            else if(j>i && j-i<min){
-                min = j-i;
-                num1 = j;
-                num2 = i;
+            else if(arr[j]>arr[i] && arr[j]-arr[i]<min){
+                min = arr[j]-arr[i];
+                num1 = arr[j];
+                num2 = arr[i];
             }
         }
     }
