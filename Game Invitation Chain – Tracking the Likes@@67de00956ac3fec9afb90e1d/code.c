@@ -1,7 +1,7 @@
 #include<stdio.h>
 int totalLikes(int n){
     if(n == 0){
-        liked = 0;
+        int liked = 0;
         return liked;
     }
     int start = 5;
