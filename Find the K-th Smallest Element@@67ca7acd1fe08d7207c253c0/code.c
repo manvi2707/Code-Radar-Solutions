@@ -10,8 +10,8 @@ int kthSmallest(int arr[] , int n , int k){
         }
     }
     int result;
-    if(k < n){
-        result = arr[k];
+    if(k <= n){
+        result = arr[k-1];
     }
     else{
         result = -1;
