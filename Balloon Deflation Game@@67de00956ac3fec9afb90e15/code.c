@@ -18,10 +18,6 @@ void deflateBalloons(int air[] , int n){
             j++;
         }
     }
-    for(int i = 0; i<j; i++){
-        printf("uni: ");
-        printf("%d " , unique[i]);
-    }
     int m = 0;
     int num = n;
     printf("%d\n" , n);
