@@ -22,7 +22,7 @@ int main(){
         }
     }
     int num = 1;
-    bool term;
+    int term;
     for(int i = p; i<N; i++){
         if(num == arr[i]){
             num++;
