@@ -4,7 +4,7 @@ void trackPlayerRanks(int ranked[] , int n; int player[] , int m , int result[])
     int j = 0;
     for(int i = 0; i<n-1; i++){
         if(ranked[i] != ranked[i+1]){
-            unique[j] = ranled[i];
+            unique[j] = ranked[i];
             j++;
         }
     }
