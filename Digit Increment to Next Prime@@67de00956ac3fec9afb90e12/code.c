@@ -6,10 +6,10 @@ int incrementToPrimeDigits(int N){
         if(digit == 0 || digit == 1 || digit == 2){
             prime = prime*10 + 2;
         }
-        else if(digit = 3){
+        else if(digit == 3){
             prime = prime*10 + 3;
         }
-        else if(digit = 4 || digit == 5){
+        else if(digit == 4 || digit == 5){
             prime = prime*10 + 5;
         }
         else if(digit == 6 || digit == 7){
