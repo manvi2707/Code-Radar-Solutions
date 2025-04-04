@@ -10,8 +10,8 @@ int main(){
     scanf("%d" , &T);
     for(int i = 0; i<N; i++){
         for(int j = i; j<N; j++){
-            if(i+j == T){
-                printf("%d %d\n" , i , j);
+            if(arr[i]+arr[j] == T){
+                printf("%d %d\n" , arr[i] , arr[j]);
             }
         }
     }
