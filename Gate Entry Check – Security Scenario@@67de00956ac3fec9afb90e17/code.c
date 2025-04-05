@@ -6,7 +6,7 @@ int gateOpen(int threshold ,int entryTimes[], int n){
             count++;
         }
     }
-    if(count == threshold){
+    if(count >= threshold){
         return 1;
     }
     else{
