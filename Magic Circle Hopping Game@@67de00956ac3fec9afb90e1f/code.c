@@ -3,7 +3,7 @@ int finalEnergy(int clouds[] , int n , int k){
     int energy = 100;
     int l;
     if(n-1%k == 0){
-        enegry -= 0;
+        energy -= 0;
         l = n;
     }
     else{
