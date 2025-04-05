@@ -18,5 +18,5 @@ int finalEnergy(int clouds[] , int n , int k){
             energy -= 3;
         }
     }
-    return enegry;
+    return energy;
 }
