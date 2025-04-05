@@ -16,6 +16,6 @@ int calculatePenalty(int subDay , int subMonth , int subYear , int dueDay , int 
                 penalty = 0;
             }
         }
-    }
+    
     return penalty;
 }
