@@ -17,7 +17,7 @@ int findKthMissing(int arr[] , int n , int k){
             m++;
         }
     }
-    if(req = 10000){
+    if(req == 10000){
         req = arr[n-1]+k;
     }
     return req;
