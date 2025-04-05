@@ -10,7 +10,7 @@ int finalEnergy(int clouds[] , int n , int k){
         energy -= 1;
         l = ((n-1)/k)*k;
     }
-    for(int i = k; i<=l; i+k){
+    for(int i = k; i<=l; i+=k){
         if(clouds[i] == 0){
             energy -= 1;
         }
