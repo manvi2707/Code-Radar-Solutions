@@ -1,7 +1,7 @@
 #include<stdio.h>
 int findKthMissing(int arr[] , int n , int k){
     int m = 1;
-    int req;
+    int req = 10000;
     int p = 0;
     while(p != n){
         if(m == arr[p]){
@@ -16,6 +16,9 @@ int findKthMissing(int arr[] , int n , int k){
             }
             m++;
         }
+    }
+    if(req = 10000){
+        req = arr[n-1]+k;
     }
     return req;
 }
