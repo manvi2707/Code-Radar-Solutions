@@ -10,7 +10,7 @@ int findKthMissing(int arr[] , int n , int k){
         }
         else{
             k--;
-            if(k == 0){
+            if(k == 1){
                 req = m;
                 break;
             }
