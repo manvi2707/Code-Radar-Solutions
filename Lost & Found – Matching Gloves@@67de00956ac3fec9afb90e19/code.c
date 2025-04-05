@@ -20,5 +20,6 @@ int countGlovePairs(int gloves[] , int n){
             count = 1;
         }
     }
+    pair += count/2;
     return pair;
 }
