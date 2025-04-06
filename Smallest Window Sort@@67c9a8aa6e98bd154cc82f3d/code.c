@@ -5,6 +5,7 @@ int findUnsortedSubarray(int arr[] , int n){
     for(int i = 1; i<n; i++){
         if(arr[i-1] > arr[i]){
             start = i-1;
+            printf("s = %d" , start);
             break;
         }
     }
