@@ -13,6 +13,7 @@ int findUnsortedSubarray(int arr[] , int n){
             end = i+1;
         }
     }
+    printf("%d %d " , end , start);
     int req = end-start+1;
     return req;
 }
