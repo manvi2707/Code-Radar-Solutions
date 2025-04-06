@@ -21,7 +21,7 @@ int main(){
     }
     arr_new[k] = -1;
     for(int i = 0; i<n; i++){
-        printf("%d\n" , arr_new[i]);
+        printf("%d " , arr_new[i]);
     }
     return 0;
 }
