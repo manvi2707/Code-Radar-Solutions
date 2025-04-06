@@ -19,5 +19,5 @@ int findUnsortedSubarray(int arr[] , int n){
     if(arr[0]>arr[n-1]){
         req = n;
     }
-    return end;
+    return req;
 }
