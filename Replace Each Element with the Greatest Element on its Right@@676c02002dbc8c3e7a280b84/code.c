@@ -16,7 +16,8 @@ int main(){
             }
         }
         arr_new[i] = max;
-        max = arr[p++];
+        p++;
+        max = arr[p];
     }
     arr_new[n-1] = -1;
     for(int i = 0; i<n; i++){
