@@ -8,7 +8,6 @@ int main(){
     }
     int arr_new[n];
     int max = arr[1];
-    int k = 0;
     int p = 1;
     for(int i = 0; i<n; i++){
         for(int j = i+1; j<n; j++){
@@ -16,11 +15,10 @@ int main(){
                 max = arr[j];
             }
         }
-        arr_new[k] = max;
+        arr_new[i] = max;
         max = arr[p+1];
-        k++;
     }
-    arr_new[k] = -1;
+    arr_new[n-1] = -1;
     for(int i = 0; i<n; i++){
         printf("%d " , arr_new[i]);
     }
