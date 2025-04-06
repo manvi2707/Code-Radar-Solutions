@@ -16,7 +16,7 @@ int main(){
             }
         }
         arr_new[k] = max;
-        max = arr[i+1];
+        max = arr[i+2];
         k++;
     }
     arr_new[k] = -1;
