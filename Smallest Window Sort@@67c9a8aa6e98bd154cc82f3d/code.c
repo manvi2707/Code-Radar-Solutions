@@ -1,6 +1,6 @@
 #include<stdio.h>
 int findUnsortedSubarray(int arr[] , int n){
-    int start = -1;
+    int start = 1;
     int end = 0;
     for(int i = 1; i<n; i++){
         if(arr[i-1] > arr[i]){
