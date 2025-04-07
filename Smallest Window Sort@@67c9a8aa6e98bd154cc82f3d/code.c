@@ -46,7 +46,7 @@ int findUnsortedSubarray(int arr[] , int n){
         }
     }
     }
-    if(start == 0 && end == 0){return 0;}
+    if(start == 0 && end == 0){return (end-start);}
     else{
         return(end-start+1);
     }
