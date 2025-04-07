@@ -30,6 +30,10 @@ int findUnsortedSubarray(int arr[] , int n){
         }
     }
     }
+    if(arr[n-1]==arr[0]){
+        start = 1;
+        end = n-1;
+    }
     if(arr[n-1]!= max){
         end = n-1;
     }
