@@ -24,6 +24,7 @@ char* compressString(char str[] , char compressed[]){
                     compressed[k++] = buffer[j];
                 count = 1;
             }
+            }
         }
     }
     compressed[k] = '\0';
