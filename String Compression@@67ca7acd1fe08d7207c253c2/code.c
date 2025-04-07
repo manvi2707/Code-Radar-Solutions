@@ -13,6 +13,7 @@ char* compressString(char str[] , char compressed[]){
             if(count == 1){
                 compressed[k] = str[i-1];
                 count = 1;
+                k++;
             }
             else{
                 compressed[k] = str[i-1];
