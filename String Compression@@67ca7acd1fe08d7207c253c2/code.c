@@ -1,6 +1,8 @@
 #include<stdio.h>
-char compressString(char str[] , char compressed[]){
-    int l = sizeof(str)/sizeof(str[0]);
+#include<string.h>
+#include<stdlib.h>
+char* compressString(char str[] , char compressed[]){
+    int l = strlen(str);
     int count = 1;
     int k = 0;
     for(int i = 1; i<l; i++){
