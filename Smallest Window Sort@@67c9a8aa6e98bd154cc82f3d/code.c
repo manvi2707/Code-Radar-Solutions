@@ -1,12 +1,12 @@
 #include<stdio.h>
 int findUnsortedSubarray(int arr[] , int n){
-    int num = num[0];
+    int num = arr[0];
     int count = 1;
     for(int i = 0; i<n; i++){
-        if(num[i] == num){
+        if(arr[i] == num){
             num++;
         }
-        elseif(num[i] != num && num[i] == num[i-1]){
+        else if(arr[i] != num && arr[i] == arr[i-1]){
             continue;
         }
         else{
