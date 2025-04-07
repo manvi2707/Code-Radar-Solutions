@@ -23,5 +23,6 @@ char* compressString(char str[] , char compressed[]){
             }
         }
     }
+    compressed[k] = '\0';
     return compressed;
 }
