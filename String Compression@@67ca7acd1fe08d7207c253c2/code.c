@@ -18,8 +18,10 @@ char* compressString(char str[] , char compressed[]){
             else{
                 compressed[k] = str[i-1];
                 k++;
-                compressed[k] = count;
-                k++;
+                char buffer[10];
+                sprintf(buffer, "%d", count);
+                for (int j = 0; buffer[j] != '\0'; j++) {
+                    compressed[k++] = buffer[j];
                 count = 1;
             }
         }
