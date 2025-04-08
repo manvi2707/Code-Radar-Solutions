@@ -25,7 +25,7 @@ char* compressString(char str[], char compressed[]) {
 
     // Process the last character/group
     compressed[k++] = str[l - 1];
-    if (count > 1) {
+    if (count > 2) {
         char buffer[10];
         sprintf(buffer, "%d", count);
         for (int j = 0; buffer[j] != '\0'; j++) {
