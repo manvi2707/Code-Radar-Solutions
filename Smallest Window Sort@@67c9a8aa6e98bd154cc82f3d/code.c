@@ -29,6 +29,11 @@ int findUnsortedSubarray(int arr[] , int n){
             break;
         }
     }
-    count = end-start+1;
+    if(end == 0 && start == 0){
+        count == 0;
+    }
+    else{
+        count = end-start+1;
+    }
     return count;
 }
