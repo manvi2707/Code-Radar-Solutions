@@ -11,12 +11,12 @@ char* compressString(char str[], char compressed[]) {
             count++;
         }
         else{
-            if(cout == 1){
+            if(count == 1){
                 compressed[k] = str[i-1];
                 k++;
                 count = 1;
             }
-            else if(cout == 2){
+            else if(count == 2){
                 compressed[k] = str[i-1];
                 compressed[k+1] = str[i-1];
                 k+=2;
