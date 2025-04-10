@@ -1,7 +1,8 @@
 #include<stdio.h>
+#include<limit.h>
 int findUnsortedSubarray(int arr[] , int n){
-    int min = 100000;
-    int max = -100000;
+    int min = INT_MAX;
+    int max = INT_MIN;
     for(int i = 0; i<n; i++){
         if(arr[i]>max){
             max = arr[i];
