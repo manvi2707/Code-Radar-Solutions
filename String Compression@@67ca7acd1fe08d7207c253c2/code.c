@@ -16,12 +16,6 @@ char* compressString(char str[], char compressed[]) {
                 k++;
                 count = 1;
             }
-            else if(count == 2){
-                compressed[k] = str[i-1];
-                compressed[k+1] = str[i-1];
-                k+=2;
-                count = 1;
-            }
             else{
                 compressed[k] = str[i-1];
                 k++;
@@ -35,13 +29,13 @@ char* compressString(char str[], char compressed[]) {
         }
     }
     compressed[k] = '\0';
-    // int comp_l = strlen(compressed);
-    // if(l == comp_l){
-    //     for(int i = 1;i<=l;i++){
-    //         if(compressed[i]=='2'){
-    //             compressed[i]==compressed[i-1];
-    //         }
-    //     }
-    // }
+    int comp_l = strlen(compressed);
+    if(l == comp_l){
+        for(int i = 1;i<=l;i++){
+            if(compressed[i]=='2'){
+                compressed[i]==compressed[i-1];
+            }
+        }
+    }
     return compressed;
 }
