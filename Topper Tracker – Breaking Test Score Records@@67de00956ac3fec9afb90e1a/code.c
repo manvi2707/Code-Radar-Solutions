@@ -14,7 +14,7 @@ void trackScores(int score[] , int n , int result[]){
             min = score[i];
         }
     }
-    result[0] = max;
-    result[1] = min;
+    result[0] = max_num;
+    result[1] = min_num;
     return;
 }
