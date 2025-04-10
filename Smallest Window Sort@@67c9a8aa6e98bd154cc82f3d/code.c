@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<limits.h>
 int findUnsortedSubarray(int arr[] , int n){
-    int min = INT_MAX;
     int max = INT_MIN;
+    int min = INT_MAX;
     for(int i = 0; i<n; i++){
         if(arr[i]>max){
             max = arr[i];
@@ -13,48 +13,27 @@ int findUnsortedSubarray(int arr[] , int n){
     }
     int start = 0;
     int end = 0;
-    if(arr[0]!= min){
+    if(arr[0]!=min){
         start = 0;
     }
     else{
-    min++;
     for(int i = 1; i<n; i++){
-        if(arr[i] != min && arr[i] == arr[i-1]){
-
-        }
-        else if(arr[i] != min){
-            start = i;
+        if(arr[i]<arr[i-1]){
+            start = i-1; 
             break;
-        }  
-        else{
-            min++;
         }
-    }
-    }
-    if(arr[n-1]==arr[0] && arr[n-1]!=arr[n-2]){
-        start = 1;
-        end = n-1;
-    }
-    if(arr[n-1]!= max){
+    }}
+    if(arr[n-1]!=max){
         end = n-1;
     }
     else{
-        max--;
-    for(int i = n-2; i>=0; i--){
-        if(arr[i]!= max && arr[i] == arr[i+1]){
-
-        }
-        else if(arr[i]!=max){
-            end = i;
-            break;
-        }
-        else{
-            max--;
+        for(int i = n-1; i>0; i++){
+            if(arr[i-1]>arr[i]){
+                end = i;
+                break;
+            }
         }
     }
-    }
-    if(start == 0 && end == 0){return (end-start);}
-    else{
-        return(end-start+1);
-    }
+    int l = end-start+1;
+    return l;
 }
