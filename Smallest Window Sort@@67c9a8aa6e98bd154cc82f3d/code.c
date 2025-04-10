@@ -23,13 +23,13 @@ int findUnsortedSubarray(int arr[] , int n){
     for(int i = 0; i<n; i++){
         if(sorted_arr[i]!=arr[i]){
             start = i;
-            break
+            break;
         }
     }
     for(int i = n-1; i>=n; i++){
         if(sorted_arr[i]!=arr[i]){
             end = i;
-            break
+            break;
         }
     }
     count = end-start+1;
