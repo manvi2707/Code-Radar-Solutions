@@ -24,7 +24,7 @@ char* compressString(char str[], char compressed[]) {
             }
             else{
                 compressed[k] = str[i-1];
-                compressed[k+1] = (char)count;
+                sprintf(compressed[k+1] , %d , count);
                 k+=2;
                 count = 1;
             }
