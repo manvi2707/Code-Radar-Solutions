@@ -1,5 +1,5 @@
 #include<stdio.h>
-int trackScores(int score[] , int n , int result){
+void trackScores(int score[] , int n , int result){
     int max_num = 0; 
     int min_num = 0;
     int max = score[0];
@@ -16,5 +16,5 @@ int trackScores(int score[] , int n , int result){
     }
     result[0] = max;
     result[1] = min;
-    return result;
+    return;
 }
