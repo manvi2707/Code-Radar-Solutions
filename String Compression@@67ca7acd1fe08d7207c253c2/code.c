@@ -6,7 +6,7 @@ char* compressString(char str[], char compressed[]) {
     int l = strlen(str);
     int count = 1;
     int k = 0;
-    for(int i = 1; i<l; i++){
+    for(int i = 1; i<=l; i++){
         if(str[i]==str[i-1]){
             count++;
         }
