@@ -18,10 +18,20 @@ int findUnsortedSubarray(int arr[] , int n){
     for(int i = 0; i<n; i++){
         printf("%d %d\n" , arr[i],sorted_arr[i] );
     }
+    int start = 0;
+    int end = 0;
     for(int i = 0; i<n; i++){
         if(sorted_arr[i]!=arr[i]){
-            count++;
+            start = i;
+            break
         }
     }
+    for(int i = n-1; i>=n; i++){
+        if(sorted_arr[i]!=arr[i]){
+            end = i;
+            break
+        }
+    }
+    count = end-start+1;
     return count;
 }
