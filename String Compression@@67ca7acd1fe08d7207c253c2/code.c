@@ -32,7 +32,7 @@ char* compressString(char str[], char compressed[]) {
     int comp_l = strlen(compressed);\
     if(l == comp_l){
         for(int i = 1;i<=l;i++){
-            if(compressed[i]=="2"){
+            if(compressed[i]=='2'){
                 compressed[i]==compressed[i-1];
             }
         }
