@@ -24,10 +24,11 @@ char* compressString(char str[], char compressed[]) {
             }
             else{
                 compressed[k] = str[i-1];
-                char c[1];
-                sprintf(c , "%d" , count);
-                compressed[k+1] = c[0];
-                k+=2;
+                char countStr[10];
+                sprintf(countStr, "%d", count);
+                for (int j = 0; countStr[j] != '\0'; j++) {
+                    compressed[k++] = countStr[j];
+                }
                 count = 1;
             }
         }
